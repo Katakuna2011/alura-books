@@ -29,6 +29,7 @@
     position: absolute;
     top: 100%;
     width: 60vw;
+    height: 5vw;
 }
 
 .container__botao:checked~.lista-menu {
@@ -37,7 +38,7 @@
 
 .lista-menu__titulo,
 .lista-menu__item {
-    padding: 1em;
+    padding: .8em;
     background-color: var(--branco);
 }
 
