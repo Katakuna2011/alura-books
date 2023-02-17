@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +39,131 @@
             <a href="#"><img src="./img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
+    
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/Angular.svg" alt="Livro Angular"></div>
+                    <div class="swiper-slide"><img src="./img/Guia Front-end.svg" alt="Guia Front-end"></div>
+                    <div class="swiper-slide"><img src="./img/Javascript.svg" alt="Livro Javascript"></div>
+                    <div class="swiper-slide"><img src="./img/Nodejs.svg" alt="Livro Nodejs"></div>
+                    <div class="swiper-slide"><img src="./img/ReactNative.svg" alt="Livro ReactNative"></div>
+                    <div class="swiper-slide"><img src="./img/UX.svg" alt="Livro UX"></div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="card">
+                <!-- 1ª linha -->
+                <div class="card__descricao">
+                    <!-- 1ª coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!-- 2ª coluna -->
+                    <img src="./img/Angularimg.svg" class="descricao__imagem" alt="Logo Angular">
+                </div>
+
+                <!-- 2ª linha -->
+                <div class="card__botoes">
+                    <!-- 1ª coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="./img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="./img/Compras.svg" alt="Adicionar no carrinho de comprasw"></li>
+                    </ul>
+                    <!-- 2ª coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+    </section>
+
+    <section class="bestsellers">
+        <h2 class="bestsellers__titulo">MAIS VENDIDOS</h2>
+         <!-- Slider main container -->
+         <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/Angular.svg" alt="Livro Angular"></div>
+                <div class="swiper-slide"><img src="./img/Guia Front-end.svg" alt="Guia Front-end"></div>
+                <div class="swiper-slide"><img src="./img/Javascript.svg" alt="Livro Javascript"></div>
+                <div class="swiper-slide"><img src="./img/Nodejs.svg" alt="Livro Nodejs"></div>
+                <div class="swiper-slide"><img src="./img/ReactNative.svg" alt="Livro ReactNative"></div>
+                <div class="swiper-slide"><img src="./img/UX.svg" alt="Livro UX"></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="card2">
+            <!-- 1ª linha -->
+            <div class="card__descricao">
+                <!-- 1ª coluna -->
+                <div class="descricao">
+                    <img src="./img/Estrelinhas.svg" alt="Classificação">
+                    <h3 class="descricao__autor">Autor do Mês</h3>
+                    <h2 class="descricao__autor-livro">Arthur Carvalho</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritor, Arthur é especialista em Roblox. </p>
+                </div>
+                <!-- 2ª coluna -->
+                <img src="./img/baixados.png" class="autor__imagem" alt="Logo Angular">
+            </div>
+
+            <!-- 2ª linha -->
+            <div class="card__botoes">
+                <!-- 1ª coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="./img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="./img/Compras.svg" alt="Adicionar no carrinho de comprasw"></li>
+                </ul>
+                <!-- 2ª coluna -->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
 </body>
 
 </html>
