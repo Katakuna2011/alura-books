@@ -1,3 +1,7 @@
+.bestsellers {
+    font-family: var(--fonte-principal);
+}
+
 .bestsellers__titulo {
     color: var(--laranja);
     background-color: var(--branco);

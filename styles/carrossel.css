@@ -1,3 +1,7 @@
+.carrossel {
+    font-family: var(--fonte-principal);
+}
+
 .carrossel__titulo {
     color: var(--laranja);
     background-color: var(--branco);
