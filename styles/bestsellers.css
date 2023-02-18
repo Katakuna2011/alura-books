@@ -31,3 +31,14 @@
         margin: 2em auto;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .descricao__autor{
+        font-size: 32px;
+    }
+
+    .card2 {
+        width: 60%;
+        margin-left: 3em;
+    }
+}
