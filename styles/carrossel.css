@@ -120,6 +120,12 @@
         margin: 2em auto;
     }
 
+    .botoes__ancora:hover {
+        background: var(--branco);
+        color: var(--laranja);
+        border: 1px solid var(--laranja);
+    }
+
 }
 
 @media screen and (min-width: 1728px) {
